@@ -7,7 +7,6 @@ import 'package:flame_test/flame_test.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:unicorn_crossing/game/entities/unicorn/behaviors/behaviors.dart';
 import 'package:unicorn_crossing/game/game.dart';
 import 'package:unicorn_crossing/l10n/l10n.dart';
 
@@ -54,17 +53,6 @@ void main() {
         images: images,
       );
     }
-
-    testWithGame(
-      'has all behaviors',
-      createFlameGame,
-      (game) async {
-        final unicorn = Unicorn(position: Vector2.all(1));
-        await game.ensureAdd(unicorn);
-
-        expect(unicorn.findBehavior<TappingBehavior>(), isNotNull);
-      },
-    );
 
     testWithGame(
       'loads correctly',

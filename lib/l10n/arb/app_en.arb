@@ -40,5 +40,17 @@
         "description": "The current count"
       }
     }
+  },
+  "gameOver": "Game Over",
+  "@gameOver": {
+    "description": "Game over text",
+    "type": "text",
+    "placeholders": {}
+  },
+  "restart": "Restart",
+  "@restart": {
+    "description": "Label for the restart button",
+    "type": "text",
+    "placeholders": {}
   }
 }

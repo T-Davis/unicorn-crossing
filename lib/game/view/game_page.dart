@@ -60,7 +60,7 @@ class _GameViewState extends State<GameView> {
   Widget build(BuildContext context) {
     final textStyle = Theme.of(context).textTheme.bodySmall!.copyWith(
           color: Colors.white,
-          fontSize: 4,
+          fontSize: 30,
         );
 
     _game ??= widget.game ??
